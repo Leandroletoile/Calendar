@@ -1,9 +1,8 @@
 import axios from 'axios';
 
 const calendarApi = axios.create({
-    baseURL: process.env.VITE_API_URL,
+    baseURL: import.meta.env.VITE_API_URL,
 })
-
 
 // TODO configurar interceptores
 
